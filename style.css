@@ -74,13 +74,38 @@ img {
 
 .hero {
   display: flex;
-  padding: 56px 20px 144px 20px;
+  /* padding: 56px 20px 144px 20px; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 8px;
   align-self: stretch;
   width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 32px;
+}
+
+.nav-btn {
+  cursor: pointer;
+  border: 0;
+  background-color: var(--primary-dark-100);
+  font-family: var(--font-secondary);
+  color: var(--primary-light-50);
+  font-size: var(--fs-150);
+  font-weight: var(--fw-bold);
+  line-height: 180%;
+  border-bottom: 2px solid var(--primary-light-100);
+  padding: 0;
+  /* border-bottom: 10em; */
+}
+
+.nav-btn:hover {
+  color: var(--primary-light-100);
 }
 
 /* UTILITY CLASSES */
