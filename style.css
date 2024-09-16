@@ -14,6 +14,8 @@
   --font-secondary: "Manrope", sans-serif;
 
   /* FONT SIZES */
+  /* 8px */
+  --fs-50: 0.5rem;
   /* 16px */
   --fs-100: 1rem;
   /* 18px */
@@ -32,6 +34,8 @@
   --fs-500: 3.5rem;
   /* 60px */
   --fs-600: 3.75rem;
+  /* 64px */
+  --fs-650: 4rem;
   /* 80px */
   --fs-800: 5rem;
 
@@ -115,6 +119,10 @@ img {
   color: var(--primary-light-50);
 }
 
+.underline {
+  border-bottom: solid 3px var(--primary-light-100);
+}
+
 .hero-btn {
   display: flex;
   justify-self: center;
@@ -137,10 +145,82 @@ img {
   height: 184px;
 }
 
-.ornamental {
+/* .ornamental {
   align-self: stretch;
   height: 24px;
   width: 100%;
+} */
+
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* align-self: stretch; */
+  padding: var(--fs-650) var(--fs-200);
+  /* gap: var(--fs-50); */
+}
+
+.services__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: var(--fs-300);
+}
+
+.service__item:last-child {
+  margin-bottom: 0;
+}
+
+.number {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  /* align-self: center; */
+  gap: var(--fs-50);
+  width: 48px;
+  height: 48px;
+  border-radius: 99px;
+  border: 1px solid var(--primary-dark-50);
+  font-family: var(--font-primary);
+  font-size: var(--fs-200);
+  font-weight: var(--fw-semi-bold);
+  font-style: normal;
+  /* gap: var(--fs-250); */
+  /* line-height: 40px; */
+  /* text-align: center; */
+}
+
+.section__title {
+  display: flex;
+  margin: 24px 0 16px;
+  color: var(--primary-dark-100);
+  font-family: var(--font-primary);
+  font-size: var(--fs-250);
+  font-style: normal;
+  font-weight: var(--fw-semi-bold);
+  line-height: 120%;
+  /* gap: var(--fs-200); */
+}
+
+.section__content {
+  margin: 0;
+  color: var(--primary-dark-100);
+  font-family: var(--font-secondary);
+  font-size: var(--fs-100);
+  font-style: normal;
+  font-weight: var(--fw-regular);
+  line-height: 180%;
 }
 
 /* UTILITY CLASSES */
