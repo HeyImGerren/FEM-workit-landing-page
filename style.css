@@ -258,6 +258,28 @@ img {
   font-weight: var(--fw-regular);
   line-height: 180%;
 }
+
+footer {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  padding: 80px;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 56px;
+}
+
+.social__logos {
+  display: flex;
+  justify-content: center;
+  gap: 1.75rem;
+}
+
 /* UTILITY CLASSES */
 .bg--dark {
   background: var(--primary-dark-100);
