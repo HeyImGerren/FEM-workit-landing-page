@@ -119,8 +119,17 @@ img {
   color: var(--primary-light-50);
 }
 
-.underline {
+.accent {
+  position: relative;
+}
+
+#underline::after {
+  content: "";
+  position: absolute;
+  width: 100%;
   border-bottom: solid 3px var(--primary-light-100);
+  bottom: 0.3rem;
+  left: 0rem;
 }
 
 .btn {
@@ -227,6 +236,12 @@ img {
   padding-top: 112px;
 }
 
+#portrait__img {
+  position: relative;
+  z-index: -1;
+  top: 4rem;
+}
+
 .cta__info {
   display: flex;
   flex-direction: column;
@@ -242,9 +257,11 @@ img {
 .cta__title {
   margin: 0;
   font-family: var(--font-primary);
-  font-size: var(--fs-300);
+  /* font-size: var(--fs-300); */
+  font-size: var(--fs-275);
   font-style: normal;
-  font-weight: var(--fw-semi-bold);
+  /* font-weight: var(--fw-semi-bold); */
+  font-weight: var(--fw-regular);
   line-height: 120%;
   /* text-align: left; */
 }
