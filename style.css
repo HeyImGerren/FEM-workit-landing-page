@@ -101,6 +101,7 @@ img {
 }
 
 .hero {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -132,6 +133,22 @@ img {
   left: 0rem;
 }
 
+#bg-pattern-1 {
+  position: absolute;
+  display: none;
+  /* top: 0rem;
+  left: 0rem;
+  transform: translateX(-45%); */
+}
+
+#bg-pattern-2 {
+  position: absolute;
+  display: none;
+  /* top: 6rem;
+  right: -3rem;
+  transform: translateX(40%); */
+}
+
 .btn {
   display: flex;
   justify-self: center;
@@ -147,11 +164,29 @@ img {
   color: var(--primary-dark-100);
 }
 
-.iphone__img {
-  /* margin-top: 80px; */
-  /* position: ; */
-  width: 320.018px;
-  height: 184px;
+.curve--1 {
+  position: absolute;
+  width: 100%;
+  height: 11rem;
+  clip-path: ellipse(60% 55% at 50% 45%);
+  /* background-color: red; */
+  background-color: var(--primary-dark-100);
+  top: 19.8rem;
+  right: 0rem;
+  z-index: -1;
+}
+
+.hero-image {
+  position: relative;
+  margin-bottom: 8rem;
+}
+
+#phone-img {
+  position: absolute;
+  max-width: 20rem;
+  left: 50%;
+  bottom: -125px;
+  transform: translateX(-45%);
 }
 
 /* .ornamental {
@@ -301,6 +336,7 @@ footer {
 .bg--dark {
   background: var(--primary-dark-100);
 }
+
 /* TABLETS */
 /* @media (min-width: 700px) {
 
