@@ -40,6 +40,7 @@
   --fs-650: 4rem;
   /* 80px */
   --fs-800: 5rem;
+  /* 192px */
   --fs-900: 12rem;
 
   /* FONT WEIGHTS */
@@ -174,7 +175,8 @@ img {
   clip-path: ellipse(60% 55% at 50% 45%);
   /* background-color: red; */
   background-color: var(--primary-dark-100);
-  top: 19.8rem;
+  /* top: 20.5rem; */
+  top: 24rem;
   right: 0rem;
   z-index: 1;
 }
@@ -188,9 +190,9 @@ img {
 
 #phone-img {
   position: absolute;
-  max-width: 20rem;
+  max-width: 24rem;
   left: 50%;
-  bottom: -125px;
+  bottom: -155px;
   transform: translateX(-45%);
   z-index: 2;
 }
@@ -358,9 +360,25 @@ footer {
 }
 
 /* TABLETS */
-/* @media (min-width: 700px) {
+/* TODO: 
+  - Make phone img bigger
+  - Display circle graphics on left and right side of hero section
+  - Display the services section in columns
+  - Make founder img smaller and offset from the info box
+  - Add in the graphic to the right of the cta box
+*/
+@media (min-width: 700px) {
+  #bg-pattern-1 {
+    display: block;
+    transform: translate(-128%, -2%);
+  }
 
-} */
+  #bg-pattern-2 {
+    display: block;
+    transform: translate(223%, 55%);
+    z-index: 2;
+  }
+}
 
 /* DESKTOP */
 /* @media (min-width: 1000px) {
