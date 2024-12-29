@@ -112,6 +112,7 @@ img {
   align-items: center;
   gap: 2.5rem;
   padding: 3.5rem 1.25rem 9rem;
+  overflow: hidden;
 }
 
 .hero-title {
@@ -148,6 +149,7 @@ img {
 #bg-pattern-2 {
   position: absolute;
   display: none;
+  /* overflow-x: hidden; */
   /* top: 6rem;
   right: -3rem;
   transform: translateX(40%); */
@@ -335,6 +337,15 @@ img {
   line-height: 180%;
 }
 
+#bg-pattern-3 {
+  position: absolute;
+  display: none;
+  /* overflow-x: hidden; */
+  /* top: 6rem;
+  right: -3rem;
+  transform: translateX(40%); */
+}
+
 footer {
   /* display: flex;
   justify-content: center;
@@ -363,11 +374,12 @@ footer {
 
 /* TABLETS */
 /* TODO: 
-  - Make phone img bigger 
-  - Display circle graphics on left and right side of hero section
-  - Display the services section in columns
+  X Make phone img bigger 
+  X Display circle graphics on left and right side of hero section
+  X Display the services section in columns
   - Make founder img smaller and offset from the info box
   - Add in the graphic to the right of the cta box
+  - Figure out what's causing overflow ( look at line 387 transforming the 2nd background pattern, when it's turned off in the inspect mode it fixes the overflow. So try to find a better way to position the graphic without overflow
 */
 @media (min-width: 700px) {
   #phone-img {
@@ -382,7 +394,8 @@ footer {
 
   #bg-pattern-2 {
     display: block;
-    transform: translate(223%, 55%);
+    transform: translate(400px, 50%);
+    /* overflow: hidden; */
     z-index: 2;
   }
 
@@ -406,6 +419,45 @@ footer {
 
   .number {
     padding: 1.5rem;
+  }
+
+  .cta {
+    padding-top: 3rem;
+  }
+
+  #portrait__img {
+    transform: translateY(16%);
+    /* margin-top: 2rem; */
+    /* padding-top: 5rem; */
+    width: 40%;
+  }
+
+  .cta__content {
+    /* padding-top: ; */
+    padding-left: 11rem;
+    /* max-width: 60%; */
+    /* padding-bottom: 4rem; */
+    /* text-align: left; */
+  }
+
+  .cta__info {
+    align-items: flex-start;
+    padding: var(--fs-400);
+    /* max-width: 70%; */
+    /* align-self: flex-end; */
+  }
+
+  .cta__paragraph {
+    text-align: left;
+  }
+
+  .cta__title {
+    font-size: var(--fs-400);
+  }
+
+  #bg-pattern-3 {
+    display: block;
+    transform: translate(100%, 93%);
   }
 }
 
