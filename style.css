@@ -377,9 +377,9 @@ footer {
   X Make phone img bigger 
   X Display circle graphics on left and right side of hero section
   X Display the services section in columns
-  - Make founder img smaller and offset from the info box
-  - Add in the graphic to the right of the cta box
-  - Figure out what's causing overflow ( look at line 387 transforming the 2nd background pattern, when it's turned off in the inspect mode it fixes the overflow. So try to find a better way to position the graphic without overflow
+  X Make founder img smaller and offset from the info box
+  X Add in the graphic to the right of the cta box
+  ? Figure out what's causing overflow ( look at line 387 transforming the 2nd background pattern, when it's turned off in the inspect mode it fixes the overflow. So try to find a better way to position the graphic without overflow
 */
 @media (min-width: 700px) {
   #phone-img {
@@ -462,6 +462,60 @@ footer {
 }
 
 /* DESKTOP */
-/* @media (min-width: 1000px) {
+/* TODO: 
+  X Re-position Hero spiral graphics 
+  X Change orientation of services (3 columns, 1 row)
+  X Fix padding for services section
+  X Fix second curve (ligher purple)
+  X Founder Image and CTA need to be bigger/positioned slightly different
+  X Fix BG PATTERN 3 positioning   
+*/
+@media (min-width: 1000px) {
+  .hero-title {
+    font-size: var(--fs-800);
+  }
 
-} */
+  #bg-pattern-1 {
+    transform: translate(-200%, 5%);
+  }
+
+  #bg-pattern-2 {
+    transform: translate(390%, 50%);
+  }
+
+  .services {
+    margin-top: 0;
+  }
+
+  .services__section {
+    flex-direction: row;
+    margin-top: 6rem;
+  }
+
+  .section__title {
+    justify-content: center;
+  }
+
+  .service__item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .curve--2 {
+    bottom: -30rem;
+  }
+
+  #portrait__img {
+    transform: translateY(30%);
+    width: 40%;
+  }
+
+  .cta__content {
+    padding: 0rem 10rem 0rem 24rem;
+    transform: translateY(-10%);
+  }
+
+  #bg-pattern-3 {
+    transform: translate(170%, 65%);
+  }
+}
