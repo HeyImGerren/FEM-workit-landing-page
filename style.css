@@ -519,3 +519,21 @@ footer {
     transform: translate(170%, 65%);
   }
 }
+
+/* FINAL TO-DO */
+/* 
+  - Use clamp on the cta section so that re-sizing isn't as much of an issue
+  - Figure out the sizing issue on the purple box for the CTA section
+  - Looks like the mobile view is missing the second light purple curve
+  - Figure out if using transform is the best way to position things around on the page
+  - Make sure the naming structure is following standard conventions 
+*/
+
+/* Once the above is done, delete all comments and make sure to get rid of any unused code */
+
+/* Update the read me using the FEM template */
+
+/* Other Ideas For Learning */
+/* 
+  - Since the project is already done, re-do the project using SASS for practice
+*/
